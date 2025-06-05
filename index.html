@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Malith Pamuditha Fernando">
+  <meta name="keywords" content="Formula 1, F1, quiz, racing, driver, sport, educational, game">
+  <meta name="description" content="Test your knowledge about Formula 1 drivers, teams, and races in this fun and challenging quiz game.">
+  
+  <!-- Use the URL for the Formula 1 logo as the favicon -->
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIP7safVFWj02p-HfNBVn35tgkeauhfXzf1A&s" type="image/png">
+
+  <title>Formula 1 Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="checkered-flag">
+    <h1>Formula 1 Quiz Game</h1>
+  </div>
+  
+  <div id="game">
+    <div id="question-container">
+      <p id="question">Loading question...</p>
+    </div>
+    <div id="options"></div>
+    <div id="result"></div>
+    <div id="scoreboard">
+      <p id="score">Score: <span id="score-value">0</span></p>
+      <p id="high-score">High Score: <span id="high-score-value">0</span></p>
+      <p id="timer">Time Left: <span id="timer-value">60s</span></p>
+    </div>
+  </div>
+
+  <!-- Loading Animation -->
+  <div id="loading-container">
+    <div class="loader"></div>
+    <p>Loading next question...</p>
+  </div>
+
+  <!-- Game Over Modal -->
+  <div class="modal" id="gameOverModal">
+    <div class="modal-content">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="final-score">0</span></p>
+      <button id="restart-button">Restart Game</button>
+    </div>
+  </div>
+
+  <!-- Developer Info Section -->
+  <footer>
+    <p>Developer: Malith Pamuditha Fernando</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
